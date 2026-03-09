@@ -1,0 +1,34 @@
+grammar LogOpsWithSets;
+
+o() returns []: a() os() {};
+
+os() returns []: OR a() os() {} | # {};
+
+a() returns []: n() as() {};
+
+as() returns []: AND n() as() {} | # {};
+
+n() returns []: NOT n() {} | b() x() {};
+
+x() returns []: op() b() x() {} | # {};
+
+op() returns []: XOR {} | EQ {};
+
+b() returns []: NAME bs() {} | OPEN o() CLOSE {};
+
+bs() returns []: IN NAME {} | NOTIN NAME {};
+
+
+IN : "in";
+NOTIN : "not in";
+
+XOR : "xor";
+OR : "or";
+AND : "and";
+NOT : "not";
+EQ : "==";
+
+OPEN : "\\(";
+CLOSE : "\\)";
+
+NAME : "[a-z]([a-z]|[0-9])*";
