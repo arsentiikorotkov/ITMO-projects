@@ -1,0 +1,41 @@
+grammar Calculator;
+
+import java.util.stream.IntStream; 
+
+s() returns [int val]: e() { $val = e0.val; };
+
+e() returns [int val] : t() es(t0.val) { $val = es1.val; };
+
+es(int lhs) returns [int val]
+  : PLUS t() es(lhs + t1.val) { $val = es2.val; }
+  | MINUS t() es(lhs - t1.val) { $val = es2.val; }
+  | # { $val = lhs; };
+
+t() returns [int val] : f() ts(f0.val) { $val = ts1.val; };
+
+ts(int lhs) returns [int val]
+  : STAR f() ts(lhs * f1.val) { $val = ts2.val; }
+  | SLASH f() ts(lhs / f1.val) { $val = ts2.val; }
+  | # { $val = lhs; };
+
+f() returns [int val]
+  : OPEN e() CLOSE { $val = e1.val; } fac($val) { $val = fac3.val; }
+  | NUM { $val = Integer.parseInt(NUM0); } fac($val) { $val = fac1.val; };
+
+fac(int lhs) returns [int val]
+  : DOUBLEFAC { $val = IntStream.rangeClosed(1, lhs).filter(x -> (x % 2) == (lhs % 2)).reduce(1, (acc, n) -> acc * n); } fac($val) { $val = fac1.val; }
+  | FAC { $val = IntStream.rangeClosed(1, lhs).reduce(1, (acc, n) -> acc * n); } fac($val) { $val = fac1.val; }
+  | # { $val = lhs; };
+
+NUM : "([0]|[-]?[1-9][0-9]*)";
+
+DOUBLEFAC : "\\!\\!";
+FAC : "\\!";
+
+PLUS : "\\+";
+MINUS : "-";
+STAR : "\\*";
+SLASH : "/";
+
+OPEN : "\\(";
+CLOSE : "\\)";
