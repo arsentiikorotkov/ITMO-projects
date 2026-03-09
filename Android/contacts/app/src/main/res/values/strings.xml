@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="permissionNotReceived">Permission wasn\'t received</string>
+    <string name="defaultMessage">Hello!</string>
+    <string name="todo">TODO</string>
+    <plurals name="contactsLoaded">
+        <item quantity="zero">No contacts loaded</item>
+        <item quantity="one">%d contact loaded</item>
+        <item quantity="other">%d contacts loaded</item>
+    </plurals>
+</resources>

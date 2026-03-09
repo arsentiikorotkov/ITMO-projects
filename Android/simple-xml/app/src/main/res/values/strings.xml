@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="todo">TODO</string>
+    <string name="log_in">Log In</string>
+    <string name="nullLogin">Please, type login</string>
+    <string name="nullPassword">Please, type password</string>
+    <string name="nullLoginAndPassword">Please, type password and login</string>
+    <string name="incorrect">Incorrect login or password</string>
+    <string name="theme">Theme</string>
+    <string name="hide">👁</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+</resources>

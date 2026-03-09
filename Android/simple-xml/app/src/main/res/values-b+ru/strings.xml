@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Логин</string>
+    <string name="todo">TODO</string>
+    <string name="log_in">Вход</string>
+    <string name="nullLogin">Пожалуйста, напишите логин</string>
+    <string name="nullPassword">Пожалуйста, напишите пароль</string>
+    <string name="nullLoginAndPassword">Пожалуйста, напишите логин и пароль</string>
+    <string name="incorrect">Неправильный логин или пароль</string>
+    <string name="theme">Тема</string>
+    <string name="hide">👁</string>
+    <string name="password">Пароль</string>
+    <string name="login">Логин</string>
+</resources>

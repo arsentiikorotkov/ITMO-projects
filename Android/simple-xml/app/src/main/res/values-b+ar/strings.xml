@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تسجيل الدخول</string>
+    <string name="todo">TODO</string>
+    <string name="log_in">مدخل</string>
+    <string name="nullLogin">يرجى كتابة اسم المستخدم الخاص بك</string>
+    <string name="nullPassword">يرجى كتابة كلمة المرور</string>
+    <string name="nullLoginAndPassword">يرجى كتابة اسم المستخدم وكلمة المرور</string>
+    <string name="incorrect">تسجيل دخول أو كلمة مرور غير صحيحة</string>
+    <string name="theme">الموضوع</string>
+    <string name="hide">👁</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+</resources>

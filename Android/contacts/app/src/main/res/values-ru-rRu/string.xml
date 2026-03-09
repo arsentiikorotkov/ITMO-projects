@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Контакты</string>
+    <string name="permissionNotReceived">Разрешение не было получено</string>
+    <string name="defaultMessage">Привет!</string>
+    <string name="todo">TODO</string>
+    <plurals name="contactsLoaded">
+        <item quantity="one">%d контакт загружен</item>
+        <item quantity="few">%d контакта загружено</item>
+        <item quantity="many">%d контактов загружено</item>
+    </plurals>
+</resources>

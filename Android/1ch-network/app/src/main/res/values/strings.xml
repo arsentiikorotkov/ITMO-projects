@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Web</string>
+    <string name="to">To: </string>
+    <string name="from">From: </string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="messageField"> Write a message\.\.\.</string>
+    <string name="time">Time: </string>
+    <string name="content">Content: </string>
+    <string name="missingConnection">Sorry, but you don\'t have an internet connection.</string>
+</resources>
